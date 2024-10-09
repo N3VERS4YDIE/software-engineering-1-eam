@@ -1,0 +1,13 @@
+@startuml
+title News Articles Loading Process
+start
+:Start;
+: Load news articles by newspaper;
+: Check loaded quantity;
+if (Is the quantity below expected?) then (Yes)
+  : Notify via instant message or email;
+endif
+: Show report of quantities uploaded per day over the last week;
+: End;
+stop
+@enduml
