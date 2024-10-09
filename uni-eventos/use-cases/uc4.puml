@@ -1,0 +1,15 @@
+@startuml
+actor Administrador
+actor Usuario
+
+usecase "Crear Cupón" as UC1
+usecase "Distribuir Cupón Automáticamente" as UC2
+usecase "Redimir Cupón" as UC3
+usecase "Registrar Uso del Cupón" as UC4
+
+Administrador --> UC1
+Usuario --> UC3
+UC2 --> UC3
+UC3 --> UC4
+
+@enduml

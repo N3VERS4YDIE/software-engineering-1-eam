@@ -1,0 +1,12 @@
+@startuml
+actor Usuario
+
+usecase "Agregar al Carrito" as UC1
+usecase "Visualización del Carrito" as UC2
+usecase "Validación de Disponibilidad" as UC3
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+
+@enduml

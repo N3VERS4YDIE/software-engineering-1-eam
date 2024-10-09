@@ -1,0 +1,12 @@
+@startuml
+actor Usuario
+
+usecase "Registro de Usuario" as UC1
+usecase "Activación de Cuenta" as UC2
+usecase "Solicitud de Nuevo Código de Activación" as UC3
+
+Usuario --> UC1
+Usuario --> UC2
+Usuario --> UC3
+
+@enduml

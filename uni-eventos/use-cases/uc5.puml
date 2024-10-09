@@ -1,0 +1,16 @@
+@startuml
+actor Usuario
+
+usecase "Solicitar Recuperación de Contraseña" as UC1
+usecase "Generar y Enviar Código Temporal" as UC2
+usecase "Validar Código Temporal" as UC3
+usecase "Restablecer Contraseña" as UC4
+usecase "Notificar Cambio de Contraseña" as UC5
+
+Usuario --> UC1
+UC1 --> UC2
+Usuario --> UC3
+UC3 --> UC4
+UC4 --> UC5
+
+@enduml

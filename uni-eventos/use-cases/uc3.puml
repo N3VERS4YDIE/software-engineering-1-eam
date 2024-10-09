@@ -1,0 +1,18 @@
+@startuml
+actor Administrador
+
+usecase "Crear Evento" as UC1
+usecase "Modificar Evento" as UC2
+usecase "Visualizar Evento" as UC3
+usecase "Eliminar Evento" as UC4
+usecase "Gestionar Localidades" as UC5
+usecase "Controlar Capacidad" as UC6
+
+Administrador --> UC1
+Administrador --> UC2
+Administrador --> UC3
+Administrador --> UC4
+Administrador --> UC5
+UC5 --> UC6
+
+@enduml
